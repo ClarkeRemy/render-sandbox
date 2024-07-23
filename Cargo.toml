@@ -1,0 +1,21 @@
+[workspace]
+
+members = ["dylibs/*", "dylib_signatures", "generic", "posits"]
+
+[package]
+name = "render_sandbox"
+version = "0.1.0"
+
+[dependencies]
+generic = { path = "./generic" }
+posits  = { path = "./posits" }
+
+# hot reload related libs
+hot-lib-reloader = "0.6.5" # https://docs.rs/hot-lib-reloader/latest/hot_lib_reloader/
+
+dylib_signatures = { path = "./dylib_signatures" }
+hot              = { path = "./dylibs/hot" }
+
+# external dependancies
+winit = "0.28.6"
+softbuffer = "0.3.1"

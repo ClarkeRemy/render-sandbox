@@ -1,0 +1,8 @@
+[package]
+name = "dylib_signatures"
+version = "0.1.0"
+edition = "2021"
+
+# this crate defines an interface at a top level, 
+# as such it should have internal no dependancies, ie: from the workspace.
+[dependancies] # external

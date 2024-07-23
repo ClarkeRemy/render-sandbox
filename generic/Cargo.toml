@@ -1,0 +1,8 @@
+[package]
+name = "generic"
+version = "0.1.0"
+edition = "2021"
+
+# this library should not depend on the dylibs,
+# But it can depend on the signatures in dylib_signatures
+[dependencies]
